@@ -1,0 +1,208 @@
+<html>
+    <head>
+        <style>
+            .grid{
+                display: grid;
+                background-color: aliceblue;
+                grid-template-areas: 
+                "header header header"
+                "navigation content sidebar"
+                "footer footer footer";
+                grid-template-columns: 1fr 2fr 1fr;
+                grid-template-rows: 1fr 20fr 1fr;
+                overflow-x: auto;
+                gap: 15px;
+                padding: 10px;
+            }
+            .header{
+                grid-area: header;
+                background-color: blueviolet;
+                padding: 5px;
+            }
+            .header{
+                font-family: cursive;
+                color: azure;
+                text-align: center;
+            }
+            .navigation{
+                grid-area: navigation;
+                background-color: chocolate;
+                padding: 15px;
+            }
+            .navigation h2{
+                color:lavender;
+                font-family: cursive;
+                font-size: 35px;
+            }
+            .navigation ul{
+                list-style: none;
+            }
+            .navigation a{
+                text-decoration: none;
+                color: black;
+                font-size: 20px;
+            }
+            .navigation li{
+                margin-bottom: 20px;
+            }
+            .content{
+                grid-area: content;
+                background-color: crimson;
+                padding: 15px;
+            }
+            .content h3{
+                color: cornsilk;
+                font-family: cursive;
+                font-size: 30px;
+            }
+            .content p{
+                color: rgb(13, 13, 14);
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .content ul{
+                list-style: square;
+                color: rgb(13, 13, 14);
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+            }
+            .content li{
+                margin-bottom: 5px;
+            }
+            .content h4{
+                color: lavender;
+                font-family: serif;
+                font-size: 25px;
+            }
+            .sidebar{
+                grid-area: sidebar;
+                background-color: darkmagenta;
+                padding: 10px;
+            }
+            .sidebar h2{
+                color:lavender;
+                font-family: cursive;
+                font-size: 35px;
+            }
+            .sidebar ul{
+                font-size: 20px;
+            }
+            .sidebar h4{
+                font-size: 20px;
+            }
+            .sidebar p{
+                font-size: 20px;
+            }
+            .footer{
+                grid-area: footer;
+                background-color:darkslateblue ;
+                padding: 10px;
+            }
+            .footer p{
+                font-size: 20px;
+                text-align: center;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="grid">
+            <div class="header">
+                <h1>Internet of Things</h1>
+            </div>
+            <div class="navigation">
+                <h2>Contents</h2>
+                <ul>
+                    <li><a href="#iot">What is IOT?</a></li>
+                    <li><a href="#eg">Examples of IOT</a></li>
+                    <li><a href="#app">Applications of IOT</a></li>
+                    <li><a href="#working">Working with IOT devices</a></li>
+                    <li><a href="#adv">Advantages of IOT</a></li>
+                    <li><a href="#Dis">Disadvantages of IOT</a></li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="bar">
+                <section id="iot">
+                    <h3>What is IOT?</h3>
+                    <p>The Internet of Things (IoT) is a network of physical objects that are connected to the internet and can communicate with each other and with other devices. IoT devices, also known as "smart objects“.</p>
+                </section>
+                <section id="eg">
+                    <h3>Examples of IOT:</h3>
+                    <ul>
+                        <li>Connected cars.</li>
+                        <li>Smart appliances.</li>
+                        <li>Connected security systems.</li>
+                        <li>Smart agriculture equipment.</li>
+                        <li>Connected retail.</li>
+                        <li>Connected healthcare monitors.</li>
+                        <li>Connected manufacturing equipment.</li>
+                        <li>Connected cities.</li>
+                    </ul>
+                </section>
+                <section id="app">
+                    <h3>Applications of IOT:</h3>
+                    <h4>1.Smart Home Applications:</h4>
+                    <p>Smart homes are a key IoT application. Examples include Mark Zuckerberg's AI home automation and Alan Pan's system using musical notes for in-house functions.</p>
+                    <h4>2.Wearables:</h4>
+                    <p>Wearable technology, an early adopter of IoT, includes devices like Fitbits, heart rate   monitors, and smartwatches. The Guardian glucose monitoring device helps diabetics by detecting glucose levels with a sensor under the skin and transmitting data via radiofrequency.</p>
+                    <h4>3.Hacked Car:</h4>
+                    <p>Connected cars use Internet and WAN networks, offering benefits like infotainment, advanced navigation, and improved fuel efficiency.</p>
+                    <h4>4.Health care:</h4>
+                    <p>IoT transforms reactive medical systems into proactive wellness systems by enhancing device power, precision, and availability. IoT-enabled care devices collect real-world data to improve healthcare systems beyond just tools</p>
+                </section>
+                <section id="working">
+                    <h3>Working with IoT Devices:</h3>
+                    <h4>Collect and Transmit Data : </h4>
+                    <p>Sensors are used in various applications to collect and transmit data based on specific requirements.</p>
+                    <h4>Actuate device based on triggers produced by sensors or processing devices:</h4>
+                    <p>Actuator devices perform actions when certain conditions or user-defined triggers are met.</p>
+                    <h4>Receive Information: </h4>
+                    <p>Devices or users can receive information from the network for analysis and processing.</p>
+                    <h4>Communication Assistance:</h4>
+                    <p>This involves communication between two networks or IoT devices across the same or different networks. It is facilitated by protocols like MQTT, CoAP, ZigBee, FTP, and HTTP.</p>
+                </section>
+                <section id="adv">
+                    <h3>Advantages of IOT:</h3>
+                    <ul>
+                        <li>Improved efficiency and automation of tasks.</li>
+                        <li>Increased convenience and accessibility of information.</li>
+                        <li>Better monitoring and control of devices and systems.</li>
+                        <li>Greater ability to gather and analyze data.</li>
+                        <li>Improved decision-making.</li>
+                        <li>Cost savings.</li>
+                    </ul>
+                </section>
+                <section id="Dis">
+                    <h3>Disadvantages of IOT</h3>
+                    <ul>
+                        <li>Security concerns and potential for hacking or data breaches.</li>
+                        <li>Privacy issues related to the collection and use of personal data.</li>
+                        <li>Dependence on technology and potential for system failures.</li>
+                        <li>Limited standardization and interoperability among devices.</li>
+                        <li>Complexity and increased maintenance requirements.</li>
+                        <li>High initial investment costs.</li>
+                        <li>Limited battery life on some devices.</li>
+                        <li>Concerns about job displacement due to automation.</li>
+                    </ul>
+                </section>
+            </div>
+            </div>
+            <div class="sidebar">
+                <h2>Sidebar</h2>
+                <h4>Note:</h4><p>This is the essay contents of IOT topic.</p>
+                <ul>
+                    <li>IOT with examples</li>
+                    <li>Applications</li>
+                    <li>Working</li>
+                    <li>Advantages</li>
+                    <li>Disadvantages</li>
+                </ul>
+                <p>Contact: madhu10@example.com</p>
+            </div>
+            <div class="footer">
+                <p>@ IOT content</p>
+            </div>
+        </div>
+    </body>
+</html>
